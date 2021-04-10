@@ -3,10 +3,8 @@ Alright! I'm halfway through platzi's Database Fundamentals course, and it's tim
 
 The goal of this project is to create a database to store the worldbuilding of my Hurdles for new guardians book series.
 
-I'll use this database to manage content, relationships and articles that I will later publish on a website for fans to read (though it will not include the actual book).
+I also wish to create something that'll work for future book series too. And I hope it helps other writers who also wish to manage content for their websites.
 
-I plan to update it according to my evolution as a writer and developer. But I'll leave an updated blank design for github.
+Though, of course, the sensitive content of my worldbuilding will not live on github. This is currently just for practice, so I plan on using just enough content at first. (Though I could later include more after the official publish date).
 
-I wish to make it so that it'll work for future book series too. And I hope it helps other writers who also wish to manage content for their websites :)
-
-Note: This is my first DevProject. I'm just starting to learn Git and SQL so… please undestand if it looks too basic :b
+Note: This is my first DevProject. I am fairly new to git, SQL and such. So I'm open to advice :)

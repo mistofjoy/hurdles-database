@@ -1,34 +1,46 @@
-##210307 - Diagram first steps
-domingo, 7 de marzo de 2021
-9:53 a. m.
+OK, I think I got the basic structure now.
 
-I made a draft of the entity relationship diagram to challenge myself after having the class. Though I didn't know about data types, constraints or relationships then, so I'll have to update it on the go.
+Being honest, I'm a little afraid because of how many transitive tables I have...
 
-I chose the app of diagrams.net to start working on it.
+###Stories
+Alright, my first independent table is **stories** which each make up for a book.
 
-###Characters table
-I decided to begin with the characters table. I thought about adding more columns, but figured that many of the attributes could change from book to book. So I only stuck with things that would prevail all along the series.
+I want to keep a record of books, editions, translations and such on my databse, so I created a **bookEditions** table to record it.
 
-I'll look into it again after advancing a little more.
+This one connects with many more tables because I am thinking of creating a sort of library for each book on the final website. Like a log of characters, events, and locations involved in each book that people can explore for references while reading (hopefully with some images too).
 
-###Stories table
-This one is about the stories that make up for a whole book.
+###Characters
 
-A few attributes could change according to the eddition (like language, publication date, and so on). So I decided to stick with the basics as I go on.
+Second I'll talk about **characters**. I created something basic to record characters, though I connected it to hometowns and lands... (I really wanted to keep this one independent T-T)
 
-*I put an author field. I might drop it later. But I figured that I might allow other writer's work into the series.
+Also character profiles are a little different for each story (since time goes by and people grow up), so I connected it with **stories** and created the **characterProfiles** table. This way a characters will have a profile for each book.
 
-If that's the case, then I should think about an author table… Perhaps I'll make it for universal use…
+Also, I connected **characterProfiles** to the **organizations** they belong to in on each book, but kept the original **characters** table related to the **events** they take part in.
 
-###BookEditions table
-Ok, a book can have many editions, and can be published in many languages by different publishers… 
+(I wonder if I should relate **events** and **characterProfiles** instead...)
 
-A single story can have many books, but a book only corresponds to a single story…
+###Events
 
-I'll cover what I know right now. And I'll complement it as publish
+Each story is made up by **events**, and one event can span over many **stories**, so the relationship felt somewhat obvious.
 
-###Final status
-… I truly wonder how publishers store their data.
+Also, events happen in a **location**, which in turn connects it to a **land**. And many **characters** and **organizations** take part too.
+
+###Lands
+
+**lands** help me identify locations and establish an overall feel to them. Much like riot does with all of runaterra's locations for the League of Legends franchise.
+
+Also, creating **locations** articles will let me help readers grab a feel of the place where **events** take place.
+
+(I wonder if I'll be able to connect **events** and **lands** easily on a query, or if I'll have to make a direct connection between them...)
+
+###Organizations
+Last but not least, **organizations** let me group **characters** with common interests. (Though I wonder if the connection should be with **characterProfiles** instead...)
+
+And, of course, **organizations** come from a **land** and take part in **events**, and **stories**
+
+###Next steps
+Now that the basic structure is done, it is time for the DDL Script!
+
 
 
 
