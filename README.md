@@ -1,10 +1,13 @@
 ### Book series content database
-Alright! I'm halfway through platzi's Database Fundamentals course, and it's time I start making my own database!
+Hi! This is part of my final project for the database fundamentals course of platzi.com
 
-The goal of this project is to create a database to store the worldbuilding of my Hurdles for new guardians book series.
+I'm writing a book, so I wanted to create a database that would allow me to store the worldbuilding I made for my story. one that could help me visualize information from a global view, and that could perhaps one day be the foundation of a website's back-end.
 
-I also wish to create something that'll work for future book series too. And I hope it helps other writers who also wish to manage content for their websites.
+I made it so that others can use it too. But keep in mind that this is my first project, so there'll be a lot of room for improvements.
 
-Though, of course, the sensitive content of my worldbuilding will not live on github. This is currently just for practice, so I plan on using just enough content at first. (Though I could later include more after the official publish date).
+I'll be sure to update according to my experience with the website. But I'll keep the data out of git for now.
 
-Note: This is my first DevProject. I am fairly new to git, SQL and such. So I'm open to advice :)
+####Files
+You'll find a *.drawio* file where I built the database, and a *.sql* file with the DDL language for creating the database.
+
+There is also a folder with the entity-relation diagram in a *.jpg* file.
