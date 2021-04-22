@@ -7,7 +7,7 @@ I made it so that others can use it too. But keep in mind that this is my first 
 
 I'll be sure to update according to my experience with the website. But I'll keep the data out of git for now.
 
-####Files
+#### Files
 You'll find a *.drawio* file where I built the database, and a *.sql* file with the DDL language for creating the database.
 
-There is also a folder with the entity-relation diagram in a *.jpg* file.
+There is also a folder with the entity-relation diagram in a *.png* file.
